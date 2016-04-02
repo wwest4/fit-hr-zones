@@ -1,0 +1,22 @@
+{
+  "name": "fit-hr-zones",
+  "homepage": "https://github.com/wwest4/fit-hr-zones",
+  "authors": [
+    "william.a.west@gmail.com"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "GPL3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
