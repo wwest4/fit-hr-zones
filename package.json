@@ -1,0 +1,24 @@
+{
+  "name": "fit-hr-zones",
+  "version": "1.0.0",
+  "description": "re-bucket heart rate data",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwest4/fit-hr-zones.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wwest4/fit-hr-zones/issues"
+  },
+  "homepage": "https://github.com/wwest4/fit-hr-zones#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bower-install": "^1.6.0",
+    "grunt-exec": "^0.4.6"
+  }
+}
