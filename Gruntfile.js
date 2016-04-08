@@ -3,22 +3,9 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt)
 
   grunt.initConfig({
-    bowerInstall: {
+    wiredep: {
       target: {
-        // Point to the files that should be updated when 
-        // you run `grunt bowerInstall` 
-        src: [
-          '*.html'
-        ],
-        // Optional: 
-        // --------- 
-        cwd: '',
-        dependencies: true,
-        devDependencies: false,
-        exclude: [],
-        fileTypes: {},
-        ignorePath: '',
-        overrides: {}
+        src: 'index.html' // point to your HTML file.
       }
     },
     exec: {
@@ -28,6 +15,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-bower-install');
-  grunt.registerTask('default', ['exec:bowerComponents', 'bowerInstall']);
+  grunt.loadNpmTasks('grunt-wiredep');
+  grunt.registerTask('default', ['exec:bowerComponents', 'wiredep']);
 };
