@@ -1,11 +1,9 @@
 # fit-hr-zones
 
-## Install
+## Build
 
-Make sure you have npm and grunt installed, then:
+Make sure you have npm installed, then:
 
 ```
-npm install && grunt
+npm i && npm run gulp
 ```
-
-Then place the resulting files to an http server.
