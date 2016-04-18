@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var stringify = require('stringify');
+var jshint = require('gulp-jshint');
 
 const bundle_dir = './site';
 const bundle_file  = 'index.js';
@@ -10,8 +11,9 @@ const stringify_opts = {
 		includeExtensions: ['html']
 	}
 }
+const jshint_reporter = 'default';
 
-gulp.task('default', ['index.js'], function() {
+gulp.task('default', ['jshint', 'index.js'], function() {
 });
 
 gulp.task('index.js', [], function() {
@@ -21,4 +23,10 @@ gulp.task('index.js', [], function() {
 		.bundle()
 		.pipe(source(bundle_file))
 		.pipe(gulp.dest(bundle_dir));
+});
+
+gulp.task('jshint', function() {
+	return gulp.src('./js/*.js')
+		.pipe(jshint())
+		.pipe(jshint.reporter(jshint_reporter));
 });
