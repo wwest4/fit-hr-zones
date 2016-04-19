@@ -19,6 +19,7 @@ gulp.task('default', ['jshint', 'index.js'], function() {
 gulp.task('index.js', [], function() {
 	b = browserify()
 		.transform(stringify, stringify_opts)
+		.transform('browserify-css', { autoInject: true })
 		.add('./js/main.js')
 		.bundle()
 		.pipe(source(bundle_file))

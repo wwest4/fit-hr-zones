@@ -4,10 +4,13 @@
   "description": "re-bucker google fit heartrate data",
   "main": "js/main.js",
   "dependencies": {
-    "google-client-api": "^1.0.4"
+    "bootstrap": "^3.3.6",
+    "google-client-api": "^1.0.4",
+    "jquery-browserify": "^1.8.1"
   },
   "devDependencies": {
     "browserify": "^13.0.0",
+    "browserify-css": "^0.9.1",
     "gulp": "^3.9.1",
     "gulp-jshint": "^2.0.0",
     "jshint": "^2.9.1",
